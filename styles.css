@@ -1,0 +1,677 @@
+/* General Styles */ 
+
+body { 
+
+    font-family: Arial, sans-serif; 
+
+    margin: 20px; 
+
+    padding: 20px; 
+
+    box-sizing: border-box; 
+
+    background-color: grey; 
+
+ 
+
+} 
+
+ 
+
+ 
+
+header { 
+
+    display: flex; 
+
+    justify-content: space-between; 
+
+    align-items: center; 
+
+    padding: 10px 20px; 
+
+    background-color: #333; 
+
+    color: #fff; 
+
+} 
+
+ 
+
+header .logo img { 
+
+    height: 100px; 
+
+    width: 120px; 
+
+ 
+
+} 
+
+ 
+
+nav ul { 
+
+    list-style: none; 
+
+    display: flex; 
+
+    gap: 20px; 
+
+} 
+
+ 
+
+nav ul li a { 
+
+    color: #fff; 
+
+    text-decoration: none; 
+
+    font-size: 1.1rem; 
+
+} 
+
+.contact{ 
+
+    color: white; 
+
+    font-display: 20PX; 
+
+    font-size: larger; 
+
+     
+
+} 
+
+.about.our current deals.contact{ 
+
+    color: white; 
+
+    text-decoration-color: white; 
+
+    .about.p{ 
+
+        color: white; 
+
+    } 
+
+} 
+
+.search-bar input { 
+
+    padding: 5px; 
+
+    border: none; 
+
+    border-radius: 3px; 
+
+} 
+
+.about-us-paragraph { 
+
+    color: white; 
+
+    text-decoration-color: white; 
+
+    flood-color: white; 
+
+} 
+
+.about h1 h2 p deals { 
+
+    flood-color: black; 
+
+     
+
+ 
+
+} 
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video stays in the background */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
+  }
+  
+  .video-container img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .video-container video {
+      display: none; /* Hide video on mobile if needed */
+    }
+  
+    .video-container img {
+      display: block; /* Show fallback image */
+    }
+  }
+  
+
+#about-us-content { 
+
+    color: white; /* All text within this div will be white */ 
+
+  } 
+
+   
+
+  #search-bar { 
+
+    padding: 10px; 
+
+    background-color: #fff;  /* Example search bar background */ 
+
+    display: flex; /* Use flexbox for layout */ 
+
+    justify-content: center; /* Center the content horizontally */ 
+
+     align-items: center; /* Center the content vertically */ 
+
+     box-sizing: calc(100); 
+
+     box-shadow: #e65c00; 
+
+  } 
+
+ 
+
+  #search-bar input[type="text"] { 
+
+    padding: 10px; 
+
+    border: 1px solid #ccc; 
+
+    border-radius: 4px; 
+
+    width: 300px; /* Adjust width as needed */ 
+
+  } 
+
+ 
+
+  #search-bar button { 
+
+    padding: 8px 16px; 
+
+    background-color: #4CAF50; /* Example button color */ 
+
+    color: white; 
+
+    border: none; 
+
+    border-radius: 4px; 
+
+    cursor: pointer; 
+
+    margin-left: 5px; /* Space between input and button */ 
+
+  } 
+
+ 
+
+.hero { 
+
+    position: relative; 
+
+    height: 400px; 
+
+    overflow: hidden; 
+
+} 
+
+ 
+
+#bg-video { 
+
+    position: absolute; 
+
+    top: 0; 
+
+    left: 0; 
+
+    width: 100%; 
+
+    height: 100%; 
+
+    object-fit: cover; 
+
+    z-index: -1; 
+
+} 
+
+ 
+
+.hero-content { 
+
+    position: absolute; 
+
+    top: 50%; 
+
+    left: 50%; 
+
+    transform: translate(-50%, -50%); 
+
+    text-align: center; 
+
+    color: #fff; 
+
+} 
+
+ 
+
+.hero-content h1 { 
+
+    font-size: 3rem; 
+
+    margin-bottom: 10px; 
+
+} 
+
+ 
+
+.hero-content .btn { 
+
+    padding: 10px 20px; 
+
+    background-color: #ff6600; 
+
+    color: #fff; 
+
+    text-decoration: none; 
+
+    border-radius: 5px; 
+
+} 
+
+ 
+
+.products, .about, .contact, .cart { 
+
+    padding: 20px; 
+
+    text-align: center; 
+
+} 
+
+ 
+
+.product-grid, .cart-items { 
+
+    display: grid; 
+
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */ 
+
+    gap: 20px; 
+
+    padding: 20px; 
+
+} 
+
+ 
+
+.product-item, .cart-item { 
+
+    border: 1px solid #ddd; 
+
+    padding: 15px; 
+
+    border-radius: 10px; 
+
+    text-align: center; 
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+} 
+
+.product.product-item.name{ 
+
+    color: white; 
+
+    text-decoration-color: white; 
+
+} 
+
+ 
+
+ 
+
+ 
+
+.product-item:hover, .cart-item:hover { 
+
+    transform: translateY(-5px); 
+
+    box-shadow: 0 5px 15px white(0, 0, 0, 0.1); 
+
+} 
+
+ 
+
+.product-item img, .cart-item img { 
+
+    width: 100%; 
+
+    height: auto; 
+
+    border-radius: 10px; 
+
+} 
+
+ 
+
+.product-item h3, .cart-item h3 { 
+
+    margin: 10px 0; 
+
+    font-size: 1.2rem; 
+
+    text-decoration-color: white; 
+
+    -webkit-text-fill-color: white; 
+
+} 
+
+ 
+
+.product-item p, .cart-item p { 
+
+    font-size: 1.1rem; 
+
+    color: white; 
+
+    margin: 10px 0; 
+
+} 
+
+ 
+
+.product-item button, .cart-item button { 
+
+    padding: 10px 20px; 
+
+    background-color: #ff6600; 
+
+    color: #fff; 
+
+    border: none; 
+
+    border-radius: 5px; 
+
+    cursor: pointer; 
+
+    transition: background-color 0.3s ease; 
+
+} 
+
+ 
+
+.product-item button:hover, .cart-item button:hover { 
+
+    background-color: #e65c00; 
+
+} 
+
+ 
+
+.cart-total { 
+
+    margin-top: 20px; 
+
+    text-align: right; 
+
+} 
+
+.cart h2{ 
+
+    color: white; 
+
+} 
+
+footer { 
+
+    background-color: #333; 
+
+    color: #fff; 
+
+    text-align: center; 
+
+    padding: 10px; 
+
+    position: fixed; 
+
+    bottom: 0; 
+
+    width: 100%; 
+
+} 
+
+ 
+
+footer .social-media a { 
+
+    color: #fff; 
+
+    margin: 0 10px; 
+
+    text-decoration: none; 
+
+    font-size: 1.1rem; 
+
+} 
+
+/* Basic styling - customize as needed */ 
+
+label { 
+
+    display: block; 
+
+    margin-bottom: 5px; 
+
+  } 
+
+   
+
+  input[type="text"], 
+
+  input[type="tel"], 
+
+  select, 
+
+  input[type="email"] { 
+
+    width: 100%; 
+
+    padding: 8px; 
+
+    margin-bottom: 10px; 
+
+    box-sizing: border-box; 
+
+    border: 1px solid #ccc; /* Added border */ 
+
+    border-radius: 4px; /* Added border-radius */ 
+
+  } 
+
+   
+
+  button { 
+
+    padding: 10px 20px; 
+
+    background-color: #4CAF50; 
+
+    color: white; 
+
+    border: none; 
+
+    cursor: pointer; 
+
+    border-radius: 4px; /* Added border-radius */ 
+
+  } 
+
+   
+
+  #momo-details, 
+
+  #card-details, 
+
+  #paypal-details { 
+
+    display: none; 
+
+  } /* Initially hide details */ 
+
+   
+
+  /* Style for error messages (if you have them) */ 
+
+  .error-message { 
+
+    color: red; 
+
+    margin-top: 10px; 
+
+  } 
+
+   
+
+  /* Style for cart items (on cart.html) */ 
+
+  #cart-items li { 
+
+    margin-bottom: 5px; 
+
+    padding: 5px; 
+
+    border: 1px solid #eee; /* Light gray border */ 
+
+    border-radius: 4px; 
+
+  } 
+
+   
+
+  /* Style for the cart total */ 
+
+  #cart-total { 
+
+    margin-top: 10px; 
+
+    font-weight: bold; 
+
+  } 
+
+   
+
+  /* Style for the cart container (on cart.html) */ 
+
+  #cart { 
+
+      border: 1px solid #ccc; 
+
+      padding: 20px; 
+
+      border-radius: 5px; 
+
+
+  } 
+
+ /* --- 2️⃣ MEDIA QUERIES FOR RESPONSIVENESS --- */
+
+/* 📱 Mobile View (Screens up to 600px) */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .hero-content {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #search-bar input {
+        width: 100%;
+    }
+
+    #search-bar button {
+        width: 100%;
+    }
+
+    iframe {
+        height: 300px; /* Adjust for mobile */
+    }
+}
+
+/* 💻 Tablet & Small Laptops (Screens 601px - 1024px) */
+@media screen and (max-width: 1024px) {}
+    .hero-content {
+        width: 80%;
+    }
+
+ 
+
+  body { 
+
+      font-family: sans-serif; 
+
+  } 
+
+/* Responsive Design */ 
+
+@media (max-width: 700px) { 
+
+    .product-grid, .cart-items { 
+
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */ 
+
+    } 
+
+} 
+
+ 
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
